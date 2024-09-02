@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+</head>
+<body>
+    <h1>Student Registration Form</h1>
+
+    <form action="/submit" method="post">
+        <fieldset>
+            <legend>Personal Details</legend>
+            
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="fname" required><br><br>
+            
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lname" required><br><br>
+            
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required><br><br>
+            
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select><br><br>
+            
+            <label for="address">Address:</label><br>
+            <textarea id="address" name="address" rows="4" cols="50" required></textarea><br><br>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Previous Education</legend>
+            
+            <label for="school">School Name:</label>
+            <input type="text" id="school" name="school" required><br><br>
+            
+            <label for="year">Year of Graduation:</label>
+            <input type="number" id="year" name="year" min="1900" max="2100" required><br><br>
+            
+            <label for="grade">Grade:</label>
+            <input type="text" id="grade" name="grade" required><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Additional Information</legend>
+            
+            <label for="courses">Interested Courses:</label>
+            <datalist id="courses">
+                <option value="Computer Science">
+                <option value="Information Technology">
+                <option value="Data Science">
+            </datalist>
+            <input type="text" id="course" name="course" list="courses" required><br><br>
+            
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+</body>
+</html>

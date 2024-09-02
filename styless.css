@@ -1,0 +1,33 @@
+styless.css
+/* Element selector */
+p {
+color: blue;
+}
+/* Class selector */
+.class-selector {
+color: green;
+font-weight: bold;
+}
+/* ID selector */
+#id-selector {
+color: red;
+text-decoration: underline;
+}
+/* Attribute selector */
+a[data-custom="attribute"] {
+color: orange;
+font-style: italic;
+}
+/* Descendant selector */
+.container p {
+background-color: lightgray;
+}
+/* Child selector */
+ul > li {
+color: purple;
+}
+/* Grouping selector */
+
+h1, .container span {
+color: brown;
+}
